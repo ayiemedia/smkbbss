@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us</title>
+<link rel="icon" type="image/png" href="https://i.ibb.co/Yp8BqYT/smkbbss.png">
+<style>
+@font-face {
+  font-family: 'Segoe Script';format('truetype');
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-weight:bold;
+  font-size:15px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  font-weight:bold;
+  font-size:20px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  color: #000;
+  border: 2px solid #000;
+  border-radius:4px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 0;
+  padding-top: 0;
+  padding: 2px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  font-family: 'Segoe Script', sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 2px #000;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+label {
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://i.ibb.co/Yp8BqYT/smkbbss.png" style="width:80%; height:450px;">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="name">Your Name :</label>
+        <input type="text" id="name" name="name" placeholder="Your Name..">
+        <label for="phone">No.Phone :</label>
+        <input type="text" id="phone" name="phone" placeholder="No.Phone..">
+        <label for="email">Your e-mail :</label>
+        <input type="text" id="email" name="email" placeholder="Your Email..">
+        <label for="message">Your Message :</label>
+        <textarea id="message" name="message" placeholder="Write your message here.." style="height:120px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
